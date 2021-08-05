@@ -1,15 +1,30 @@
 #include <unistd.h>
-
-char	*char_to_binary(char c);
+#include <stdio.h>
+int		*char_to_binary(char c);
 void	ft_putchar(char c);
+char	binary_to_char(char *binary);
+
+
 
 int main(int argc, char *argv[])
 {
-	char	*binary;
+	int		*binary;
 	int		i;
+	char	a;
 	char	*string;
 
 	i = 0;
+	if(argv[1][0] == '0')
+	{
+		i = 2;
+		while(i < argc)
+		{	
+			a = binary_to_char(argv[i]);
+			ft_putchar(a);
+			i++;
+		}
+		return (0);
+	}
 	if(argc < 3 || argc > 3)
 	{
 		write(2, "You must give only two arguments", 32);
@@ -28,7 +43,8 @@ int main(int argc, char *argv[])
 		binary = char_to_binary(*string);
 		while(i <= 7)
 		{	
-			ft_putchar(binary[i]);
+			a = 48 + binary[i];
+			ft_putchar(a);
 			i++;		
 		}
 		ft_putchar(' ');

@@ -1,6 +1,6 @@
-char	*char_to_binary(char c)
+int	*char_to_binary(char c)
 {
-	static char	binary[8];
+	static int	binary[8];
 	int		i;
 	int		mod;
 
@@ -9,13 +9,13 @@ char	*char_to_binary(char c)
 	{
 		mod = c % 2;
 		c /= 2;
-		binary[i] = mod + 48;
+		binary[i] = mod;
 		i--;
 	}
 	
 	while(i > 0)
 	{
-		binary[i] = 0 + 48;
+		binary[i] = 0;
 		i--;
 	}	
 	return (binary);
