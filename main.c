@@ -1,13 +1,12 @@
 #include <unistd.h>
 
-int	*char_to_binary(char c);
+char	*char_to_binary(char c);
 void	ft_putchar(char c);
 
 int main(int argc, char *argv[])
 {
-	int	*binary;
-	int	i;
-	char	a;
+	char	*binary;
+	int		i;
 	char	*string;
 
 	i = 0;
@@ -29,8 +28,7 @@ int main(int argc, char *argv[])
 		binary = char_to_binary(*string);
 		while(i <= 7)
 		{	
-			a = 48 + binary[i];
-			ft_putchar(a);
+			ft_putchar(binary[i]);
 			i++;		
 		}
 		ft_putchar(' ');
