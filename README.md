@@ -4,8 +4,8 @@ Esse programa foi escrito usando a liguagem C, usando algumas das regras da 42 s
 
 ## Regras utilizadas da 42sp.
 - Utilizar apenas *while* como laço de repetição.
-- Utilizar no maximo *4* variaveis por função.
-- Não utilizar nenhum header alem do <unistd.h>
+- Utilizar no máximo *4* variáveis por função.
+- Não utilizar nenhum header além do <unistd.h>
 - Não utilizar bibliotecas.
 
 ## Pre-requisitos.
