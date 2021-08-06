@@ -1,6 +1,6 @@
 # Conversor Texto para binário.
 Esse programa foi escrito usando a liguagem C, usando algumas das regras da 42 são paulo.
-![BinaryParser.gif](.git/assets/binaryParser.gif)
+![BinaryParser.gif](https://github.com/koukunwlk/projectsAssets/blob/main/binaryParser.gif)
 
 ## Regras utilizadas da 42sp.
 - Utilizar apenas *while* como laço de repetição.
