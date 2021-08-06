@@ -13,28 +13,27 @@ Compilador de C (Ex: gcc)
 
 ## Como usar.
 Você pode chamar o arquivo passando como primeiro parametro **0** ou **1** logo em seguida o que deseja converter.
-* **0**: Ira fazer a conversão de binário para texto, passando o codigo binario com 8 digitos. cada **parametro** subsequente representa uma **letra**.
-Logo se eu desejo escrever a string *Hello* em binário, devo executar o programa da seguinte forma.
+* **0**: Ira fazer a conversão de binário para texto, passando o código binário com 8 dígitos. Cada parâmetro subsequente representa uma letra. Logo se eu desejo escrever o texto "Hello" em binário, devo executar o programa da seguinte forma.
 ```bash
 #Para compilar o programa, Devo chamar compilador e passar o nome de todos os arquivos na pasta, no caso usei o *
-#que funciona como um curinga em bash. A saida padrão do compilador vai ser o arquivo "a.out".
-#Caso eu necessite mudar o arquivo de saida, posso passar a flag -o em seguida o nome do arquivo para alterar o arquivo de saida
+#que funciona como um curinga em bash. A saída padrão do compilador vai ser o arquivo "a.out".
+#Caso eu necessite mudar o arquivo de saída, posso passar a flag -o em seguida o nome do arquivo para alterar o arquivo de saída
 $ cc *.c -o teste
 
-#Logo em seguid eu chamo o arquivo passando como primeiro parametro 0 em seguida coloco os binarios com 8 digitos separado por espaço.
+#Logo em seguida eu chamo o arquivo passando como primeiro parâmetro 0 em seguida coloco os binários com 8 dígitos separado por espaço.
 $ teste 0 01001000 01100101 01101100 01101100 01101111
 
-#Então o programa me retorna o resultado da conversão dos binarios.
+#Então o programa me retorna o resultado da conversão dos binários.
 $ Hello
 ```
 
 * **1**: Ira fazer a conversão de um texto para binário, você deve passar o texto todo dentre aspas duplas como no exemplo a seguir.
 
 ```bash
-# Chamaremos o arquivo compilado novamente, porem mudando seu primeiro parametro para 1. 
+#Chamaremos o arquivo compilado novamente, porem mudando seu primeiro parâmetro para 1. 
 $ teste 1 "Hello"
 
-#O programa ira retornar o resultado da conversão do texto para binario
+#O programa ira retornar o resultado da conversão do texto para binário.
 $ 01001000 01100101 01101100 01101100 01101111
 ```
 
