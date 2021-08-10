@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 char binary_to_char(char *binary)
 {
     int     sum;
@@ -18,7 +16,6 @@ char binary_to_char(char *binary)
             sum += bin;
             bin /= 2;
             i++;
-            //printf("i = %d\n sum = %d\n bin = %d\n", i, sum, bin);
         }
         else
         {
@@ -29,16 +26,3 @@ char binary_to_char(char *binary)
     c = sum;
     return (c);
 }
-
-
-/* int main(int argc, char *argv[])
-{
-    int i;
-
-    i = 1;
-    while(i < argc)
-    {
-        printf("%c", binary_to_char(argv[i]));
-        i++;
-    }
-} */
